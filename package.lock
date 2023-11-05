@@ -1,0 +1,84 @@
+sdk: ^2.0.0-alpha.91
+prefixes:
+  certificate_roots: toit-cert-roots
+  color_tft: toit-color-tft
+  font_x11_adobe: pkg-font-x11-adobe
+  gnss_location: toit-gnss-location
+  http: pkg-http
+  lis3dh: lis3dh
+  location: toit-location
+  ntp: pkg-ntp
+  pixel_display: toit-pixel-display
+  solar_position: toit-solar-position
+  ssd1306: toit-ssd1306
+  telegram: toit-telegram
+packages:
+  lis3dh:
+    url: github.com/nilwes/lis3dh
+    name: lis3dh
+    version: 2.1.0
+    hash: 204423155a8338cfc89549cda9f807a9fc2f4757
+  pkg-font-x11-adobe:
+    url: github.com/toitlang/pkg-font-x11-adobe
+    name: font_x11_adobe
+    version: 0.1.0
+    hash: f844400722165252148f087cdf189abab0a47f3d
+  pkg-http:
+    url: github.com/toitlang/pkg-http
+    name: http
+    version: 2.3.4
+    hash: 39fe52083b4c745cc37420649a48277b45728fd2
+  pkg-ntp:
+    url: github.com/toitlang/pkg-ntp
+    name: ntp
+    version: 1.0.0
+    hash: 1c3cc4a4819f459393f00efc576f66f838665719
+  toit-cert-roots:
+    url: github.com/toitware/toit-cert-roots
+    name: certificate_roots
+    version: 1.6.1
+    hash: 55d3be82ed53d8d332338b2de931865cf69fe48b
+  toit-color-tft:
+    url: github.com/toitware/toit-color-tft
+    name: color_tft
+    version: 1.3.0
+    hash: 485c03596df840ec16b3e198736f044785d7e145
+    prefixes:
+      pixel_display: toit-pixel-display
+  toit-gnss-location:
+    url: github.com/toitware/toit-gnss-location
+    name: gnss_location
+    version: 1.0.2
+    hash: e9457f50c5260f9451e823a39d435e3655125bb0
+    prefixes:
+      location: toit-location
+  toit-location:
+    url: github.com/toitware/toit-location
+    name: location
+    version: 1.0.0
+    hash: 080665c10587c1ef82e26b993dda7fa560cf2075
+  toit-pixel-display:
+    url: github.com/toitware/toit-pixel-display
+    name: pixel_display
+    version: 1.6.1
+    hash: 61693447fcf73e7dd4044780fd7991c2d371b7ec
+  toit-solar-position:
+    url: github.com/toitware/toit-solar-position
+    name: solar_position
+    version: 0.0.3
+    hash: 82c796ae33d0fc7448f0beb4e485485d093e4e29
+  toit-ssd1306:
+    url: github.com/toitware/toit-ssd1306
+    name: ssd1306
+    version: 1.6.0
+    hash: 806c93972b733ff45e10a4eeeefa9a7e5e808c46
+    prefixes:
+      pixel_display: toit-pixel-display
+  toit-telegram:
+    url: github.com/floitsch/toit-telegram
+    name: telegram
+    version: 0.5.2
+    hash: 86f963b32a97f3d473d4261c19cb9af3f0354688
+    prefixes:
+      certificate_roots: toit-cert-roots
+      http: pkg-http
