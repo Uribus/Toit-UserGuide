@@ -1,0 +1,2 @@
+main:
+  print "Pepper pomegranate"
