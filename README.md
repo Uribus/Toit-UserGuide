@@ -37,3 +37,10 @@ and then, the other files are different, increasingly more complex displays
 * displayTimeRefresh.toit with modular programming, displays current time and date via the OLED screen, dividing the OLED screen in two rectangles. The rectangle where the time is displayed is refreshed every second, keeping the timestamp on screen updated
 
 ## [Telegram bot](https://docs.toit.io/tutorials/network/telegram)
+
+This project implements a Telegram bot. After having configured the bot via Telegram, it uses a private chat to answer to some commands.
+It also displays on the screen device the last message received
+
+There are two files in this project:
+* secrets.toit Includes sensitive information. More information about secrets [here](https://docs.toit.io/tutorials/misc/secrets).
+* telegram.toit Contains the main code. The program is modularized
