@@ -22,7 +22,7 @@ This simple project requires only a wire and the SMT32. It displays on console t
 This project has two main files
 * time.toit
 * updatedTime.toit
-
+  
 The other file contains a function that is referenced in other projects.
 
 ## [Display](https://docs.toit.io/language/sdk/display)
@@ -43,4 +43,10 @@ It also displays on the screen device the last message received
 
 There are two files in this project:
 * secrets.toit Includes sensitive information. More information about secrets [here](https://docs.toit.io/tutorials/misc/secrets).
-* telegram.toit Contains the main code. The program is modularized
+* telegram.toit Contains the main code. The program is modularized, and uses methods from Time and Display projects.
+
+The three defined commands are:
+* fact: responds with a random fact retrieved fromt he public API
+* date: responds with a message including the current date
+* time: responds with a message with the current timestamp
+For every other input, the SMT32 sends an default answer via chat.
